@@ -2,33 +2,100 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>Casa do Celular - Balsas MA</title>
+  <title>Nova Celular em Balsas - Celulares, Acessórios e Assistência Técnica</title>
+  <meta 
+  name="description" 
+  content="Nova Celular em Balsas - MA. Venda de celulares, acessórios e assistência técnica especializada. Atendimento rápido via WhatsApp.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/styles.css">
 
 </head>
 <body>
 
-  <header>
-    <h1>Casa do Celular</h1>
-    <p>Celulares, acessórios e assistência técnica</p>
+  <header class="header">
+  <div class="header-container">
+    <div class="header-left">
+      <img 
+        src="Assets/logo.jpg" 
+        alt="Nova Celular - Loja de celulares em Balsas MA"
+        class="logo"
+      />
+
+      <div class="header-text">
+        <h1>NOVA CELULAR</h1>
+        <p>Loja de celulares, acessórios e assistência técnica em Balsas - MA</p>
+      </div>
+    </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="celulares-novos.html">Novos</a>
+        <a href="celulares-seminovos.html">Seminovos</a>
+        <a href="assistencia.html">Assistência</a>
+        <a href="contato.html">Contato</a>
+        <a 
+          href="https://wa.me/5599999999999"
+          target="_blank"
+          class="nav-whatsapp"
+        >
+          WhatsApp
+        </a>
+      </nav>
+  </div>
   </header>
 
   <main>
-    <section id="products">
-      <h2>Celulares em destaque</h2>
-      <div class="product-list">
-       <!-- Produtos vão aparecer aqui -->
+
+    <section id="featured">
+      <h2>Destaques da Semana</h2>
+
+      <div class="carousel">
+        <button class="carousel-btn prev">‹</button>
+        <div class="carousel-track"></div>
+        <button class="carousel-btn next">›</button>
       </div>
+
+      <div class="home-cta">
+        <a href="celulares-novos.html" class="cta-btn">Ver Celulares Novos</a>
+        <a href="celulares-seminovos.html" class="cta-btn">Ver Seminovos</a>
+      </div>
+
     </section>
+
+    <section id="assistencia">
+      <h2>Assistência Técnica Especializada</h2>
+
+      <p>
+        Assistência técnica especializada em celulares em Balsas - MA.
+        Trabalhamos com troca de tela, bateria e reparos em geral,
+        com atendimento rápido e garantia.
+      </p>
+
+      <ul>
+        <li>Troca de tela</li>
+        <li>Troca de bateria</li>
+        <li>Reparo de conector de carga</li>
+        <li>Atualização de software</li>
+      </ul>
+
+      <a
+        href="https://wa.me/5599999999999?text=Olá! Gostaria de informações sobre assistência técnica."
+        target="_blank"
+      >
+        <button>Falar com a Assistência Técnica</button>
+      </a>
+    </section>
+
+
   </main>
 
   <footer>
-    <p>📍 Balsas - MA</p>
-    <p>📱 Atendimento via WhatsApp</p>
+    <p><strong>Nova Celular</strong> - Balsas, Maranhão</p>
+    <p>Celulares, acessórios e assistência técnica</p>
   </footer>
 
-  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/featured.js"></script>
+
 
 
 </body>

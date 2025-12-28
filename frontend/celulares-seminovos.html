@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Celulares Seminovos em Balsas - Nova Celular</title>
+
+  <meta 
+    name="description" 
+    content="Celulares seminovos revisados em Balsas - MA. iPhone, Samsung, Xiaomi e Motorola com garantia. Fale com a Nova Celular no WhatsApp."
+  >
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-container">
+      <div class="header-left">
+        <img 
+          src="assets/logo.jpg" 
+          alt="Nova Celular - Celulares Seminovos em Balsas MA"
+          class="logo"
+        />
+
+        <div class="header-text">
+          <h1>NOVA CELULAR</h1>
+          <p>Celulares seminovos revisados e com garantia</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="celulares-novos.html">Novos</a>
+        <a href="celulares-seminovos.html">Seminovos</a>
+        <a href="assistencia.html">Assistência</a>
+        <a href="contato.html">Contato</a>
+        <a 
+          href="https://wa.me/5599999999999"
+          target="_blank"
+          class="nav-whatsapp"
+        >
+          WhatsApp
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Celulares Seminovos Disponíveis</h2>
+
+      <p>
+        Confira nossos <strong>celulares seminovos revisados</strong>,
+        testados e com garantia. Economia e segurança em Balsas - MA.
+      </p>
+
+      <div class="product-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Nova Celular</strong> - Balsas, Maranhão</p>
+    <p>Celulares novos, seminovos e assistência técnica</p>
+  </footer>
+
+  <script type="module">
+    import { renderProducts } from "./js/main.js";
+    renderProducts({ condition: "seminovo" });
+  </script>
+
+</body>
+</html>

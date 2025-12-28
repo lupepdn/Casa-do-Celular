@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Celulares Novos em Balsas - Nova Celular</title>
+
+  <meta 
+    name="description" 
+    content="Celulares novos em Balsas - MA. iPhone, Samsung, Xiaomi, Motorola e Realme com garantia. Fale com a Nova Celular no WhatsApp."
+  >
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-container">
+      <div class="header-left">
+        <img 
+          src="assets/logo.jpg" 
+          alt="Nova Celular - Celulares Novos em Balsas MA"
+          class="logo"
+        />
+
+        <div class="header-text">
+          <h1>NOVA CELULAR</h1>
+          <p>Celulares novos com garantia em Balsas - MA</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="celulares-novos.html">Novos</a>
+        <a href="celulares-seminovos.html">Seminovos</a>
+        <a href="assistencia.html">Assistência</a>
+        <a href="contato.html">Contato</a>
+        <a 
+          href="https://wa.me/5599999999999"
+          target="_blank"
+          class="nav-whatsapp"
+        >
+          WhatsApp
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <section>
+      <h2>Celulares Novos à Venda</h2>
+
+      <p>
+        Confira nossos <strong>celulares novos com garantia</strong>.
+        Trabalhamos com as principais marcas do mercado e preços competitivos
+        em Balsas - MA.
+      </p>
+
+      <div class="product-list"></div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>Nova Celular</strong> - Balsas, Maranhão</p>
+    <p>Celulares novos, seminovos e assistência técnica</p>
+  </footer>
+
+  <script type="module">
+    import { renderProducts } from "./js/main.js";
+    renderProducts({ condition: "novo" });
+  </script>
+
+</body>
+</html>
