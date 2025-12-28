@@ -34,10 +34,6 @@ O projeto tem como objetivo criar uma **vitrine digital profissional**, focada e
 - **Assistência Técnica**
   - Página dedicada para serviços de manutenção
 
-- **Sobre Nós**
-  - Apresentação institucional da loja
-  - Valores e diferenciais do negócio
-
 - **Contato**
   - Informações de atendimento
   - CTA direto para WhatsApp
