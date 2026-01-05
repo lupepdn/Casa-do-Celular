@@ -1,0 +1,274 @@
+/* =========================
+   ASSISTÊNCIA TÉCNICA — HOME
+========================= */
+
+.assistencia-home {
+  margin: 80px auto;
+  text-align: center;
+}
+
+.assistencia-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  max-width: 1100px;
+  margin: 40px auto 0;
+}
+
+.assist-card {
+  background-color: #ffffff;
+  border: 1px solid #e4e8f0;
+  border-radius: 18px;
+  padding: 34px 20px;
+  min-height: 170px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.assist-card:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(11, 63, 168, 0.35);
+}
+
+.assist-card img {
+  width: 62px;
+  margin-bottom: 14px;
+  transition: filter 0.25s ease;
+}
+
+.assist-card span {
+  color: var(--primary-color);
+  font-weight: 600;
+  transition: color 0.25s ease;
+}
+
+.assist-card:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.assist-card:hover span {
+  color: #ffffff;
+}
+
+/* =========================
+   RESPONSIVO — HOME
+========================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .assistencia-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .assistencia-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .assist-card {
+    min-height: 160px;
+    padding: 24px 16px;
+  }
+
+  .assist-card img {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+/* =========================
+   HOME — CARROSSEL
+========================= */
+#featured {
+  margin-top: 30px;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+}
+
+.carousel-track .product {
+  min-width: 260px;
+  max-width: 260px;
+}
+
+.carousel-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-btn:hover {
+  opacity: 0.9;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .carousel-btn {
+    display: none;
+  }
+
+  .carousel-track {
+    overflow-x: auto;
+  }
+}
+
+/* =========================
+   HOME — SOBRE NÓS
+========================= */
+
+.about {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about p {
+  margin-bottom: 15px;
+}
+
+.about-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.value {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.about-cta {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-values {
+    grid-template-columns: 1fr;
+  }
+
+  .about-cta {
+    flex-direction: column;
+  }
+}
+
+/* =========================
+   POR QUE ESCOLHER A NOVA CELULAR
+
+========================= */
+
+.why-choose {
+  width: 100%;
+  background: linear-gradient(180deg, #0a2540, #0b2c8f);
+  padding: 110px 0;
+}
+
+/* Container central */
+.why-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* Título */
+.why-container h2 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+
+/* Grid dos cards */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 36px;
+}
+
+/* Card individual */
+.why-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 44px 32px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.22);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover elegante */
+.why-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 35px 70px rgba(0, 0, 0, 0.3);
+}
+
+/* Título do card */
+.why-card h3 {
+  color: #0b2c8f;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* Texto do card */
+.why-card p {
+  color: #5f6c7b;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .why-container h2 {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-card {
+    padding: 36px 26px;
+  }
+}
